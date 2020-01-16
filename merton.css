@@ -5,20 +5,33 @@
 }
 
 @font-face {
-	font-family: "Arial Nova";
-	src: url("//db.onlinewebfonts.com/t/5f2f5d8473b0d45446e98b585d90d23e.eot");
-	src: url("//db.onlinewebfonts.com/t/5f2f5d8473b0d45446e98b585d90d23e.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/5f2f5d8473b0d45446e98b585d90d23e.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/5f2f5d8473b0d45446e98b585d90d23e.woff") format("woff"), url("//db.onlinewebfonts.com/t/5f2f5d8473b0d45446e98b585d90d23e.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/5f2f5d8473b0d45446e98b585d90d23e.svg#Arial Nova") format("svg");
+	font-family: "Lato Medium";
+	src: url("//db.onlinewebfonts.com/t/a2b67a66a2c10e9d33ad123a89885f97.eot");
+	src: url("//db.onlinewebfonts.com/t/a2b67a66a2c10e9d33ad123a89885f97.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/a2b67a66a2c10e9d33ad123a89885f97.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/a2b67a66a2c10e9d33ad123a89885f97.woff") format("woff"), url("//db.onlinewebfonts.com/t/a2b67a66a2c10e9d33ad123a89885f97.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/a2b67a66a2c10e9d33ad123a89885f97.svg#Lato Medium") format("svg");
 }
 
-body {
-	min-width: initial;
-	max-width: initial;
+#maincontainer,
+#footer,
+font {
+	font-family: "Lato Medium", Arial, Helvetica, sans-serif;
+}
+
+#header {
+	font-family: "ApertoW04-Regular"
+}
+
+p, ul, ol, dl, address, table, blockquote, fieldset {
+    margin-bottom: 1em;
 }
 
 #maincontainer {
 	min-width: 960px;
 	max-width: 1100px;
-	font-family: "ApertoW04-Regular"
+}
+
+body {
+	min-width: initial;
+	max-width: initial;
 }
 
 #header {
@@ -38,19 +51,9 @@ ul#nav li.backLava {
 	height: 0px;
 }
 
-font {
-	font-family: "ApertoW04-Regular";
-}
-
 a {
 	font-weight: initial !important;
 	/* Fix header font and others.*/
-}
-
-#footer,
-#header {
-	font-family: "Helvetica Neue", "Arial Nova", Arial, Helvetica, sans-serif;
-	font-size: 0.95em;
 }
 
 a {
@@ -114,7 +117,18 @@ a.button:hover {
 }
 
 #footer {
-	background-color: #777;
+	background-color: #eee;
+	color: rgba(0,0,0,.5);
+	border-top: 1px solid #ddd;
+}
+
+#footer a {
+	color: rgba(0,0,0,.5);
+	border: initial;
+}
+
+#footer a:hover {
+	color: #636363;
 }
 
 #mainbody .date {
@@ -144,11 +158,22 @@ ul#nav li a:hover {
 	padding: 5px;
 }
 
-#sidemenu ul h3 {
-	text-align: center;
-	font-weight: normal;
-}
-
 #sidemenu ul i {
 	font-style: normal;
+}
+
+#sidemenu ul h3 {
+	padding: 0 10px;
+	/*text-align: center;
+	font-weight: normal;
+	border-bottom: 1px solid #c4c4c4;
+	border-top: 1px solid #c4c4c4;*/
+}
+
+#sidemenu li {
+    border-bottom: none;
+}
+
+#sidemenu li a {
+  padding-left: 0 !important; /* disabled moving on click*/
 }

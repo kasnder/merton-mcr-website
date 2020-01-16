@@ -2,7 +2,7 @@
 
 This is a proposal for a new layout for the MCR website.
 
-The design of the current website is horribly out of fashion, which I want to change.
+The design of the current website is horribly out of fashion, am shame!
 
 **Disclaimer:** This proposal has not been endorsed or certified by Oxford University, Merton College, or Merton College MCR.
 
