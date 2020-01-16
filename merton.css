@@ -1,5 +1,3 @@
-
-
 @font-face {
 	font-family: "ApertoW04-Regular";
 	src: url("//db.onlinewebfonts.com/t/f0553a24e9d3dfe387f4e7f1d7d0931d.eot");
@@ -26,7 +24,7 @@ body {
 #header {
 	border-top: initial;
 	border-bottom: initial;
-	/*background-color: #ed1c24;*/
+	border-bottom: 1px solid #ddd;
 }
 
 ul#nav li.backLava {
