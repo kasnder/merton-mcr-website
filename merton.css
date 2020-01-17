@@ -197,3 +197,12 @@ ul#nav li a:hover {
 #sidemenu li a {
   padding-left: 0 !important;
 }
+
+/* Fix position of pdf */
+#sidemenu a[href$=".pdf"] {
+    background: none;
+}
+#sidemenu a[href$=".pdf"]:before {
+	padding-right: 0.3em;
+	content: url(/images/pdflink.gif);
+}
