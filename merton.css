@@ -199,10 +199,20 @@ ul#nav li a:hover {
 }
 
 /* Fix position of pdf */
-#sidemenu a[href$=".pdf"] {
-    background: none;
+a[href$=".pdf"] {
+  background: none;
+	padding: inherit;
 }
-#sidemenu a[href$=".pdf"]:before {
+a[href$=".pdf"]:before {
 	padding-right: 0.3em;
 	content: url(/images/pdflink.gif);
+}
+
+a[href^="http:"] {
+	background: none;
+	padding: inherit;
+}
+a[href^="http:"]:before {
+  content: url(/images/externalLink.gif);
+	padding-right: 0.3em;
 }
